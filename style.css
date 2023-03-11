@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(bg.jpg);
+    background-size: cover;
+}
+
+.wrapper{
+    width: 605px;
+    /* background: #fff; */
+    border-radius: 10px;
+    padding: 30px 30px 25px;
+}
+
+.wrapper header{
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.wrapper .content{
+    margin: 30px 20px;
+}
+
+.content .quote-area{
+    display: flex;
+    justify-content: center;
+}
+
+.quote-area i{
+    font-size: 20px;
+}
+
+.quote-area i:first-child{
+    margin: 3px 10px 0 0;
+}
+
+.quote-area i:last-child{
+    margin: 0 0 3px 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.quote-area .quote{
+    font-size: 22px;
+    text-align: center;
+    word-break: break-all;
+}
+
+.content .author{
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+    font-style: italic;
+    justify-content: flex-end;
+}
+
+.author span:first-child{
+    margin: -7px 5px 0 0;
+    font-family: monospace;
+}
+
+.wrapper .buttons{
+    border-top: 1px solid #999;
+}
+
+.buttons .features{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.features ul{
+    display: flex;
+}
+
+.features ul li{
+    list-style: none;
+    margin: 0 5px;
+    height: 47px;
+    width: 47px;
+    display: flex;
+    color: #89CFFD;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid #89CFFD;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.features ul li:hover{
+    color: #fff;
+    background: #89CFFD ;
+}
+
+.features button{
+    border: none;
+    outline: none;
+    padding: 13px 22px;
+    border-radius: 30px;
+    background: #89CFFD;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.features.loading{
+    opacity: 0.3;
+    pointer-events: none;
+}
